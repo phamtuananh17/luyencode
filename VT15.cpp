@@ -32,13 +32,16 @@ int main()
     {
         cin >> arr[i];
     }
-    sort(arr, n);
+    sort(arr, arr + n);
 
-    for (int i = 0; i < n; ++i)
+    if (arr[0] * arr[1] * arr[n - 1] > arr[n - 3] * arr[n - 2] * arr[n - 1])
     {
-        cout << arr[i] << " ";
+        cout << arr[0] * arr[1] * arr[n - 1];
     }
-    
+    else
+    {
+        cout << arr[n - 2] * arr[n - 1] * arr[n - 3];
+    }
 
     return 0;
 }
