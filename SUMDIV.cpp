@@ -27,7 +27,7 @@ int tinhUoc(int so)
 
 void output(long arr[], int n)
 {
-    for (int i = 0; i <= n; ++i)
+    for (int i = 0; i < n; ++i)
     {
         cout << tinhUoc(arr[i]) << endl;
     }
